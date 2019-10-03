@@ -1,0 +1,61 @@
+@import "header.less";
+@import "welcome.less";
+@import "important.less";
+@import "useful.less";
+@import "catalog.less";
+
+@font-face {
+    font-family: "Gotham"; /* Имя шрифта */
+    src: url("../fonts/12119.ttf"); /* Путь к файлу со шрифтом */
+  }
+
+  @font-face {
+    font-family: "GothamBlack1"; /* Имя шрифта */
+    src: url("../fonts/14012.otf"); /* Путь к файлу со шрифтом */
+  }
+
+  @font-face {
+    font-family: "GothamBlack2"; /* Имя шрифта */
+    src: url("../fonts/13413.otf"); /* Путь к файлу со шрифтом */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'GothamBlack2';
+    font-weight: 100;
+    font-size: 46px;
+}
+
+p {
+    font-family: 'Gotham';
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.novelty {
+  width: 100px;
+  height: 20px;
+  background-color: gray;
+  opacity: 0.8;
+  display: block;
+  position: absolute;
+  margin-top: -205px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+img:hover+.novelty {
+  opacity: 1;
+}

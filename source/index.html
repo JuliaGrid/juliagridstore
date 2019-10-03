@@ -3,68 +3,264 @@
 <head>
     <meta charset="utf-8">
     <title>JuliaGrid - косметика ручной работы</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <div class="main-wrapper">
     <header>
         <nav class="main-nav">
             <a class="main-nav__logo">
-                <img>
+                <img src="img/logo4.png"  height="70">
             </a>
+            <div class="main-nav__site-basket">
             <ul class="main-nav__site-list site-list">
-                <li class="site-list__item">Обо мне</li>
-                <li class="site-list__item">Каталог</li>
-                <li class="site-list__item">Доставка и оплата</li>
+                <li class="site-list__item">полезные статьи</li>
+                <li class="site-list__item">каталог</li>
+                <li class="site-list__item">доставка и оплата</li>
             </ul>
             <a class="main-nav__basket">
-
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg width="34" height="34" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 299.915 299.915" style="enable-background:new 0 0 299.915 299.915;" xml:space="preserve">
+                <g>
+                    <path d="M293.494,53.616H55.701c-0.463,0-0.88,0.174-1.318,0.27l-9.672-32.115c-0.109-0.347-0.341-0.604-0.495-0.925
+                        c-0.264-3.303-2.956-5.919-6.324-5.919c-0.006,0-0.019,0-0.026,0L6.401,15.061C2.847,15.081-0.013,17.973,0,21.52
+                        c0.013,3.541,2.886,6.401,6.427,6.401c0.006,0,0.019,0,0.026,0l26.652-0.116l61.524,204.187
+                        c-6.112,5.585-10.013,13.541-10.013,22.468c0,16.858,13.663,30.527,30.527,30.527c16.858,0,30.527-13.67,30.527-30.527
+                        c0-4.396-0.964-8.548-2.635-12.32h88.819c-1.671,3.773-2.635,7.924-2.635,12.32c0,16.858,13.663,30.527,30.527,30.527
+                        c16.858,0,30.527-13.67,30.527-30.527s-13.67-30.527-30.527-30.527c-6.401,0-12.333,1.986-17.243,5.354H132.38
+                        c-4.91-3.368-10.836-5.354-17.237-5.354c-3.181,0-6.189,0.623-9.075,1.523l-9.178-30.45l161.918-0.129
+                        c2.834,0,5.167-1.87,6.016-4.422c0.219-0.405,0.456-0.797,0.585-1.26l34.274-126.39c0.219-0.803,0.244-1.607,0.154-2.384
+                        c0.006-0.135,0.077-0.244,0.077-0.373C299.921,56.495,297.042,53.616,293.494,53.616z M259.753,236.781
+                        c9.749,0,17.674,7.924,17.674,17.674c0,9.749-7.924,17.674-17.674,17.674c-9.75,0-17.674-7.924-17.674-17.674
+                        C242.08,244.705,250.004,236.781,259.753,236.781z M115.15,236.781c9.75,0,17.674,7.924,17.674,17.674
+                        c0,9.749-7.924,17.674-17.674,17.674s-17.674-7.924-17.674-17.674C97.476,244.705,105.4,236.781,115.15,236.781z M254.04,182.03
+                        l-161.011,0.129L58.176,66.476h227.201L254.04,182.03z"/>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
             </a>
+        </div>
         </nav>
     </header>
 
-    <body>
         <section class="welcome">
             <h1 class="welcome__note">
                 <span>Интернет-магазин</span>
                 <span>ручной работы</span>
-                <span>•мыло</span>
-                <span>•скрабы</span>
-                <span>•бальзамы для губ</span>
+                <span>мыло</span>
+                <span>скрабы</span>
+                <span>бальзамы для губ</span>
+            
             </h1>
-            <button class="welcome__button">перейти в каталог</button>
+            <a href="#catalog" class="welcome__button" >перейти в каталог</a>
         </section>
 
-        <section class="about">
-            <div class="about__wrapper">
-                <img>
-                <p class="about__description">
-                    Привет!<br>
-                    Мое имя - Юля. Я занимаюсь изготовлением косметики с 2017 года. 
-                    Это не просто мое хобби, я вкладываю сюда свою душу и сердце.
-                </p>
+        <section class="new">
+            
+                <h2 class="new__title">
+                    Новинки
+                </h2>
+                <div class="new__wrapper">
+                <label class="button-left"><button class="new__button-left visually-hidden">
+                    </button></label>
+                <ul class="new__list">
+                    <li class="new__item">
+                        <img class="new__item-img" src="img/example.jpg" width="200">  
+                        <span class="novelty">
+                                новинка
+                        </span>
+                        <h4 class="new__item-title">
+                            Мыло кофейное
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="new__item">
+                        <img src="img/example.jpg" width="200">
+                        <span class="novelty">
+                                новинка
+                        </span>
+                        <h4 class="new__item-title">
+                            Мыло банное
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="new__item">
+                        <img src="img/example.jpg" width="200">
+                        <h4 class="new__item-title">
+                            Мыло морское
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="new__item">
+                        <img src="img/example.jpg" width="200">
+                        <span class="novelty">
+                                новинка
+                        </span>
+                        <h4 class="new__item-title">
+                            Мыло
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить        
+                        </button>
+                    </li>
+                    <li class="new__item">
+                        <img class="new__item-img" src="img/example.jpg" width="200"> 
+                        <h4 class="new__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="new__item">
+                        <img class="new__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="new__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="new__item-more">
+                            подробнее
+                        </button>
+                        <button class="new__item-buy">
+                            купить
+                        </button>
+                    </li>
+                </ul>
+                <label class="button-right"><button class="new__button-right visually-hidden">
+                    </button></label>
             </div>
         </section>
 
-        <section class="catalog">
-                <h3 class="catalog__tittle">Мыло</h3>
+        <section class="useful">
+            <h2 class="useful__title">
+                Полезные статьи
+            </h2>
+            <ul class="useful__list">
+                <li class="useful__item">
+                    Условия хранения
+                </li>
+                <li class="useful__item">
+                    Срок годности
+                </li>
+            </ul>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <div class="catalog__wrapper">
+                <h3 class="catalog__title">Мыло</h3>
                 <ul class="catalog__list">
                     <li class="catalog__item">
-                        <img class="catalog__item-img">
-                        <p class="catalog__item-description"></p>
+                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img">
-                        <p class="catalog__item-description"></p>
+                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img">
-                        <p class="catalog__item-description"></p>
+                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img">
-                        <p class="catalog__item-description"></p>
+                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -109,5 +305,6 @@
         <section class="footer">
 
         </section>
+    </div>
     </body>
 </html>
