@@ -12,13 +12,23 @@
     <header>
         <nav class="main-nav">
             <a class="main-nav__logo">
-                <img src="img/logo4.png"  height="70">
+                <img src="source/img/logo4.png"  height="70">
             </a>
             <div class="main-nav__site-basket">
             <ul class="main-nav__site-list site-list">
-                <li class="site-list__item">полезные статьи</li>
-                <li class="site-list__item">каталог</li>
-                <li class="site-list__item">доставка и оплата</li>
+                <li class="site-list__item">
+                    <a href="#useful">полезные статьи</a>
+                </li>
+                <li class="site-list__item">
+                    <a>каталог</a>
+                    <ul class="site-list__item-submenu submenu">
+                        <li class="submenu__item"><a href="">мыло</a></li>
+                        <li class="submenu__item"><a href="">бальзам</a></li>
+                    </ul>
+                </li>
+                <li class="site-list__item">
+                    <a>доставка и оплата</a>
+                </li>
             </ul>
             <a class="main-nav__basket">
                 <?xml version="1.0" encoding="iso-8859-1"?>
@@ -98,7 +108,7 @@
                     </button></label>
                 <ul class="new__list">
                     <li class="new__item">
-                        <img class="new__item-img" src="img/example.jpg" width="200">  
+                        <img class="new__item-img" src="source/img/example.jpg" width="200">  
                         <span class="novelty">
                                 новинка
                         </span>
@@ -113,7 +123,7 @@
                         </button>
                     </li>
                     <li class="new__item">
-                        <img src="img/example.jpg" width="200">
+                        <img src="source/img/example.jpg" width="200">
                         <span class="novelty">
                                 новинка
                         </span>
@@ -128,7 +138,7 @@
                         </button>
                     </li>
                     <li class="new__item">
-                        <img src="img/example.jpg" width="200">
+                        <img src="source/img/example.jpg" width="200">
                         <h4 class="new__item-title">
                             Мыло морское
                         </h4>
@@ -140,7 +150,7 @@
                         </button>
                     </li>
                     <li class="new__item">
-                        <img src="img/example.jpg" width="200">
+                        <img src="source/img/example.jpg" width="200">
                         <span class="novelty">
                                 новинка
                         </span>
@@ -155,7 +165,7 @@
                         </button>
                     </li>
                     <li class="new__item">
-                        <img class="new__item-img" src="img/example.jpg" width="200"> 
+                        <img class="new__item-img" src="source/img/example.jpg" width="200"> 
                         <h4 class="new__item-title">
                             Мыло какое-то
                         </h4>
@@ -167,7 +177,7 @@
                         </button>
                     </li>
                     <li class="new__item">
-                        <img class="new__item-img" src="img/example.jpg" width="200">  
+                        <img class="new__item-img" src="source/img/example.jpg" width="200">  
                         <h4 class="new__item-title">
                             Мыло какое-то
                         </h4>
@@ -184,7 +194,7 @@
             </div>
         </section>
 
-        <section class="useful">
+        <section class="useful" id="useful">
             <h2 class="useful__title">
                 Полезные статьи
             </h2>
@@ -203,7 +213,27 @@
                 <h3 class="catalog__title">Мыло</h3>
                 <ul class="catalog__list">
                     <li class="catalog__item">
-                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <img class="catalog__item-img" src="source/img/example.jpg" width="200">  
+                        <h4 class="catalog__item-title">
+                            Мыло какое-то
+                        </h4>
+                        <div class="catalog__item-number number">
+                        <button class="number__less">-</button>
+                        <form class="number__form"> 
+                            <input type="number">
+                        </form>
+                        <button class="number__more">+</button>
+                        <p class="number__description">10 шт. в наличии</p>
+                    </div>
+                        <button class="catalog__item-more">
+                            подробнее
+                        </button>
+                        <button class="catalog__item-buy">
+                            купить
+                        </button>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-img" src="source/img/example.jpg" width="200">  
                         <h4 class="catalog__item-title">
                             Мыло какое-то
                         </h4>
@@ -215,7 +245,7 @@
                         </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <img class="catalog__item-img" src="source/img/example.jpg" width="200">  
                         <h4 class="catalog__item-title">
                             Мыло какое-то
                         </h4>
@@ -227,7 +257,7 @@
                         </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <img class="catalog__item-img" src="source/img/example.jpg" width="200">  
                         <h4 class="catalog__item-title">
                             Мыло какое-то
                         </h4>
@@ -239,19 +269,7 @@
                         </button>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
-                        <h4 class="catalog__item-title">
-                            Мыло какое-то
-                        </h4>
-                        <button class="catalog__item-more">
-                            подробнее
-                        </button>
-                        <button class="catalog__item-buy">
-                            купить
-                        </button>
-                    </li>
-                    <li class="catalog__item">
-                        <img class="catalog__item-img" src="img/example.jpg" width="200">  
+                        <img class="catalog__item-img" src="source/img/example.jpg" width="200">  
                         <h4 class="catalog__item-title">
                             Мыло какое-то
                         </h4>
@@ -288,18 +306,22 @@
         </section>
 
         <section class="circumstances">
+            <h2 class="circumstances__title">
+                Доставка и оплата
+            </h2>
             <div class="circumstances__wrapper delivery">
                 <p class="circumstances__desription">
-
+,mcxfnjlvndslbnlsk
                 </p>
-                <img class="circumstances__img">
+                <div class="circumstances__img">
+            </div>
             </div>
             <div class="circumstances__wrapper payment">
+                <div class="circumstances__img"></div>
                 <p class="circumstances__desription">
-    
+                jbkjbkh
                 </p>
-                <img class="circumstances__img">
-            </div>
+        </div>
         </section>
 
         <section class="footer">
