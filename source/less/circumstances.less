@@ -3,20 +3,25 @@
     text-align: center;
     font-family: "GothamBlack1";
     text-transform: uppercase;
-    font-size: 36px;
-    padding-top: 60px;
+    font-size: 32px;
+    padding-top: 50px;
 }
 
 .circumstances__wrapper {
     display: flex;
-    width: 900px;
+    width: 300px;
     margin: auto;
+    margin-top: 50px;
     justify-content: space-between;
 }
 
+.circumstances__desription {
+    margin: 0;
+}
+
 .circumstances__img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -27,4 +32,26 @@
 
 .payment > .circumstances__img {
     background-image: url('../img/payment.png');
+}
+
+@media (min-width: 768px) {
+    .circumstances__title {
+        padding-top: 60px;
+    }
+
+    .circumstances__wrapper {
+        width: 668px;
+        margin-top: 60px;
+    }
+
+    .circumstances__img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .circumstances__title {
+        font-size: 36px;
+    }
 }

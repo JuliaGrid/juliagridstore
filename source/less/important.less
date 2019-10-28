@@ -1,10 +1,11 @@
 .new {
     background-color: white;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    padding-bottom: 60px;
 }
 
 .new__wrapper {
-    width: 90%;
+    width: 300px;
     margin: auto;
     display: flex;
 }
@@ -14,15 +15,14 @@
     text-align: center;
     font-family: "GothamBlack1";
     text-transform: uppercase;
-    font-size: 36px;
-    padding-top: 60px;
+    font-size: 32px;
+    padding-top: 50px;
 }
 
 .new__list {
     padding: 0;
     margin: auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 50px;
     width: 1120px;
     list-style: none;
     display: flex;
@@ -30,8 +30,8 @@
 }
 
 .new__item {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .new__item-title {
@@ -60,7 +60,7 @@
 .new__item-buy {
     border: none;
     width: 94px;
-    margin-left: 7px;
+    margin-left: 7.4px;
     background-color: black;
     color: white;
     height: 30px;
@@ -89,18 +89,67 @@
 
 
 .button-left::after {
-    width: 45px;
+    width: 30px;
     height: 84px;
     position: absolute;
     content: '';
-    background-image: url('../img/arrow-left.png');
+    background-image: url('../img/arrow-left30.png');
 }
 
 .button-right::after {
-    width: 45px;
+    width: 30px;
     height: 84px;
-    margin-left: -45px;
+    margin-left: -30px;
     position: absolute;
     content: '';
-    background-image: url('../img/arrow-right.png');
+    background-image: url('../img/arrow-right30.png');
+}
+
+@media (min-width: 768px) {
+    .new__title {
+        padding-top: 60px;
+    }
+
+    .new__list {
+        margin-top: 60px;
+    }
+
+    .new__wrapper {
+        width: 668px;
+    }
+
+    .new__item {
+        margin-left: 68px;
+        margin-right: 68px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .new__wrapper {
+        width: 960px;
+    }
+
+    .new__item {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .new {
+        padding-bottom: 100px;
+    }
+    
+    .new__title {
+        font-size: 36px;
+    }
+    
+    .new__wrapper {
+        width: 1200px;
+    }
+
+    .new__item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }

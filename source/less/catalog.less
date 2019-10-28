@@ -11,8 +11,8 @@
     text-align: center;
     font-family: "Gotham";
     text-transform: uppercase;
-    font-size: 32px;
-    padding-top: 60px;
+    font-size: 30px;
+    padding-top: 50px;
     font-weight: 900;
 }
 
@@ -20,17 +20,17 @@
     list-style: none;
     padding: 0;
     margin: auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
-    width: 1120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .catalog__item {
-    margin-bottom: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-left: 52px;
+    margin-right: 52px;
 }
 
 .catalog__item-title {
@@ -38,8 +38,9 @@
     font-size: 18px;
 }
 
-.catalog__item-number {
+.number {
     display: flex;
+    margin-bottom: 18px;
 }
 
 .number__form input{
@@ -62,7 +63,9 @@
 
 .number__description {
     margin: 0;
-    font-size: 10px;
+    font-size: 11px;
+    margin-top: 2px;
+    margin-left: 12px;
     color: gray;
 }
 
@@ -95,4 +98,46 @@
     background-color: white;
     color: black;
     border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+    .catalog__title {
+        padding-top: 60px;
+    }
+
+    .catalog__list {
+        width: 668px;
+        margin-top: 60px;
+    }
+
+    .catalog__item {
+        margin-left: 67px;
+        margin-right: 67px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .catalog__list {
+        width: 960px;
+    }
+
+    .catalog__item {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .catalog__title {
+        font-size: 32px;
+    }
+    
+    .catalog__list {
+        width: 1120px;
+    }
+
+    .catalog__item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
