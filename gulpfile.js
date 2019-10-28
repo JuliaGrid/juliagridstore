@@ -22,14 +22,14 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
     server.init({
-        server: "source/",
+        server: ".",
         notify: false,
         open: true,
         cors: true,
         ui: false
     });
     gulp.watch("source/less/**/*.less", gulp.series("css"));
-    gulp.watch("source/*.html").on("change", server.reload);
+    gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));

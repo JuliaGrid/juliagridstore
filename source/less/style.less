@@ -3,6 +3,7 @@
 @import "important.less";
 @import "useful.less";
 @import "catalog.less";
+@import "circumstances.less";
 
 @font-face {
     font-family: "Gotham"; /* Имя шрифта */
@@ -36,6 +37,24 @@ p {
     font-family: 'Gotham';
 }
 
+button {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -55,6 +74,15 @@ p {
   padding-left: 10px;
   overflow: hidden;
 }
+
+/*.go-up {
+  position: fixed;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  top: 90%;
+  left: 90%;
+} */
 
 img:hover+.novelty {
   opacity: 1;
